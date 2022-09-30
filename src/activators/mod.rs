@@ -28,7 +28,7 @@ pub fn der_tanh(x: f64) -> f64{
 }
 
 pub fn relu(x: f64) -> f64{
-    f64::max(0.0, x)
+    f64::max(0.01, x)
 }
 pub fn der_relu(x: f64) -> f64{
     if x <= 0.0 {
